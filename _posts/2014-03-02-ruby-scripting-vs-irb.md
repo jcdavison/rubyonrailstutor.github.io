@@ -2,7 +2,8 @@
 layout: post
 title:  "Ruby Scripting vs IRB"
 date:   2014-03-02 11:26:42
-categories: ruby programming basics
+tags: rubybasics
+categories: rubybasics
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/xAMhGpiYeEw?vq=hd1080" frameborder="0" allowfullscreen></iframe>
