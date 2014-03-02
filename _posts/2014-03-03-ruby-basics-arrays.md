@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby Basics, Arrays"
-date:   2014-03-02 11:26:42
+date:   2014-03-03 11:26:42
 tags: rubybasics
 categories: rubybasics
 ---
