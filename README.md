@@ -1,3 +1,7 @@
+### REPO FOR TUTORIAL CONTENT 
+
+### https://github.com/rubyonrailstutor/restaurantly
+
 ### TODO
 
 - improve scripts on links that need it
@@ -6,3 +10,7 @@
 - ajaxify a review object, with tests
 - ajaxify a tags has and belongs to many object, use angular
 - get the repo reviewed by a more senior coder
+
+### JOIN A SOCIAL PAIR PROGRAMMING CLASS
+
+### http://www.rubyonrailstutor.com
