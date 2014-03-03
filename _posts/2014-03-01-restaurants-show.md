@@ -2,38 +2,43 @@
 layout: post
 title:  "Restaurants Show"
 date:   2014-03-01 11:26:42
-tags: restuarantsshow
-categories: restuarantsshow
+tags: show
+categories: show
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/xhiqKVfpPBs?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
 
-TEST DRIVE RESTAURANTS SHOW
-
-GOALS
-
-1. add test logic to controller
-2. add view code to show a restaurant object
-
-overview  'restaurants/1' is a place were we should be able to look at an object from the database.
-
-git checkout -b show-restaurant
-
-rails console => Restaurant.create name: "Mc Ruby on Rails"
-note the id #
+### CREATE RESTAURANTS#SHOW
 
 
-rm -rf test/
-mkdir spec/requests | touch spec/requests/restaurant_spec.rb
+#### add test logic to controller
+#### add view code to show a restaurant object
 
 
 
-create a restaurant object in the db.
-visit restaurants/1
+- overview  'http://localhost:3000/restaurants/:id' is a place were we should be able to look at an object from the database.
+
+> git checkout -b show-restaurant
+
+> rails console => Restaurant.create name: "Mc Ruby on Rails"
+
+- note the Restaurant id #
 
 
-# modify requests/restaurant_spec.rb
+> rm -rf test/
+ 
+> mkdir spec/requests | touch spec/requests/restaurant_spec.rb
+
+> visit http://localhost:3000/restaurants/:id
+
+- note :id should be whatever the id from the restaurant object above was
+
+
+> modify requests/restaurant_spec.rb
+
+```ruby
+
 require 'spec_helper'
 
 describe RestaurantsController do
@@ -54,10 +59,15 @@ describe RestaurantsController do
   end
 end
 
-rspec spec/requests/restaurants_spec.rb
-# should be red
+```
 
-# modify restaurants_controller.rb
+> rspec spec/requests/restaurants_spec.rb
+
+### spec output should be red
+
+> modify restaurants_controller.rb
+
+```ruby
 
 def show
   @restaurant = Restaurant.find_by_id params[:id]
@@ -69,15 +79,19 @@ def show
   end
 end
 
+```
 
-rspec spec/requests/restaurants_spec.rb
-# should be green
+> rspec spec/requests/restaurants_spec.rb 
 
-# modify show.html.haml
+### should be green
 
+> modify show.html.haml
+
+```haml
 .row
   .large-8.columns.large-centered
     %h1
       = @restaurant.name
+```
 
-# verify show in browser
+> verify visit http://localhost:3000/restaurants/:id
