@@ -5,6 +5,7 @@
 ### TODO
 
 - improve scripts on links that need it
+- screencast the dev setup env for mac and koding.com
 - deploy to heroku and screen cast
 - create a script that will publish issues to repo's that i'm a contributor on
 - ajaxify a review object, with tests, and screencast
