@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Restaurants Show"
+title:  "Restaurants#Show"
 date:   2014-03-01 11:26:42
 tags: show
 categories: show

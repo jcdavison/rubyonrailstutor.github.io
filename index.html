@@ -6,38 +6,53 @@ title: Ruby on Rails Tutor
 <div id="home">
   <h1>Curriculum</h1>
   <ul class="posts">
-    <h2>Ruby Basics </h2>
+    <h2>Da' Basics</h2>
     {% for post in site.categories.rubybasics %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 
-    <h2>Restaurantly Setup </h2>
+    <h2>Some Setup</h2>
     {% for post in site.categories.restaurantlysetup %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 
-    <h2>Restaurantly Restaurant Data Model </h2>
+    <h2>Da' Data Model</h2>
     {% for post in site.categories.restaurantlymodel %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 
-    <h2>Restaurantly Restaurant Connecting Server to Browser</h2>
+    <h2>From the Data Model to the Web Browser</h2>
     {% for post in site.categories.restaurantlyui %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 
-    <h2>Restaurantly Application Testing Configuration</h2>
+    <h2>Some Testing Configuration</h2>
     {% for post in site.categories.testingconfiguration %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 
-    <h2>Restaurants Show</h2>
+    <h2>#Show</h2>
     {% for post in site.categories.show %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 
-    <h2>Restaurants New & Create</h2>
+    <h2>#New & #Create</h2>
     {% for post in site.categories.new %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+
+    <h2>#Index & Integration Tests</h2>
+    {% for post in site.categories.integration %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+
+    <h2>#Edit & #Update</h2>
+    {% for post in site.categories.edit %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+
+    <h2>#Edit & #Update Integration</h2>
+    {% for post in site.categories.editupdateintegration %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>

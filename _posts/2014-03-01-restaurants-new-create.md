@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Restaurants New & Create"
+title:  "Restaurants#New & Restaurants#Create"
 date:   2014-03-01 11:26:42
 tags: new
 categories: new
