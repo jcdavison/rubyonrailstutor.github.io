@@ -4,11 +4,13 @@ title:  "Restaurants#New & Restaurants#Create"
 date:   2014-03-01 11:26:42
 tags: new
 categories: new
+repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/sxlV7yb6u3g?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
 ### RESTAURANTS#NEW
+
 
 1. add test structure for restaurants#new
 2. create html front end required to submit new Restaurant object to the controller
@@ -33,7 +35,7 @@ categories: new
 >rspec spec/requests/restaurants_spec.rb
 
 
-### expect green
+#### expect green
 
 
 > modify app/controllers/restaurants_controller#new

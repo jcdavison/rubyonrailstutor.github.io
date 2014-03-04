@@ -4,6 +4,7 @@ title:  "Ruby Scripting vs IRB"
 date:   2014-03-01 11:26:42
 tags: rubybasics
 categories: rubybasics
+repo: https://github.com/rubyonrailstutor/curriculum
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/xAMhGpiYeEw?vq=hd1080" frameborder="0" allowfullscreen></iframe>

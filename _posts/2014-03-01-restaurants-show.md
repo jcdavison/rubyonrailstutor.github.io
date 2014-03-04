@@ -4,15 +4,18 @@ title:  "Restaurants#Show"
 date:   2014-03-01 11:26:42
 tags: show
 categories: show
+repo: https://github.com/rubyonrailstutor/restaurantly/tree/show-restaurant
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/xhiqKVfpPBs?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
 
-### CREATE RESTAURANTS#SHOW
+#### CREATE RESTAURANTS#SHOW
 
 
-#### add test logic to controller
+#### add tests and application logic to controller
+
+
 #### add view code to show a restaurant object
 
 
@@ -35,7 +38,7 @@ categories: show
 - note :id should be whatever the id from the restaurant object above was
 
 
-> modify requests/restaurant_spec.rb
+> modify spec/requests/restaurant_spec.rb
 
 ```ruby
 
@@ -61,11 +64,12 @@ end
 
 ```
 
+#### expect red
+
+
 > rspec spec/requests/restaurants_spec.rb
 
-### spec output should be red
-
-> modify restaurants_controller.rb
+> modify app/controllers/restaurants_controller.rb
 
 ```ruby
 
@@ -81,11 +85,12 @@ end
 
 ```
 
+#### expect green 
+
 > rspec spec/requests/restaurants_spec.rb 
 
-### should be green
 
-> modify show.html.haml
+> modify app/views/restaurants/show.html.haml
 
 ```haml
 .row
@@ -94,4 +99,4 @@ end
       = @restaurant.name
 ```
 
-> verify visit http://localhost:3000/restaurants/:id
+> verify & visit http://localhost:3000/restaurants/:id

@@ -4,6 +4,7 @@ title:  "User & Authorization Data Models"
 date:   2014-03-01 11:26:42
 tags: userauth
 categories: userauth
+repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/YYRyg3aZWDQ?vq=hd1080" frameborder="0" allowfullscreen></iframe>
@@ -16,9 +17,9 @@ categories: userauth
 2. generate authorization model
 3. create sql relationship between the two
 
-git checkout user-auth
+> git checkout user-auth
 
-> modify Gemfile.rb
+#### modify Gemfile.rb
 
 ```ruby
   #user auth
@@ -44,7 +45,7 @@ git checkout user-auth
 
 
 
-> modify spec/models/authorization.rb
+#### modify spec/models/authorization.rb
 
 ```ruby
   context "required attributes" do
@@ -60,10 +61,10 @@ git checkout user-auth
 > rspec spec/models/authorization_spec.rb
 
 
-### expect red
+#### expect red
 
 
-> modify app/models/authorizations.rb
+#### modify app/models/authorizations.rb
 
 ```ruby
   validates_presence_of :uid
@@ -89,9 +90,9 @@ git checkout user-auth
 > rspec spec/models/authorization_spec.rb
 
 
-### expect red
+#### expect red
 
-> modify app/models/authorizations.rb
+#### modify app/models/authorizations.rb
 
 ```ruby
   validates_uniqueness_of :uid
@@ -99,19 +100,19 @@ git checkout user-auth
 
 > rspec spec/models/authorization_spec.rb
 
-### expect green
+#### expect green
 
 > verify in rails console
 
-### create sql relationships
+#### create sql relationships
 
-> modify app/models/user.rb
+#### modify app/models/user.rb
 
 ```ruby
   has_many :authorizations
 ```
 
-> modify app/models/authorizations.rb
+#### modify app/models/authorizations.rb
 
 ```ruby
   belongs_to :user

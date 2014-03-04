@@ -4,6 +4,7 @@ title:  "#Edit & #Update Integration Tests"
 date:   2014-03-01 11:26:42
 tags: integration
 categories: editupdateintegration
+repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-integration
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/lZiI4nAWh3M?vq=hd1080" frameborder="0" allowfullscreen></iframe>

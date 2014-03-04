@@ -5,7 +5,73 @@ date:   2014-03-02 11:26:42
 categories: ruby programming basics
 tags: restaurantlymodel
 categories: restaurantlymodel
+repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 ---
 
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/9yxyw0SMMCs?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+
+> git checkout -b restaurant_model
+
+> rails g model restaurant name:string address:string 
+
+#### pro tip setup 'be' in ~/.bash_profile or ~/.bashrc
+
+```sh
+  alias be='bundle exec'
+```
+
+### then type source ~/.bash_profile or ~/.bashrc
+
+> be rake db:migrate
+
+> be rake db:test:prepare
+
+> sublime .
+
+#### modify spec/spec_helper.rb
+
+```ruby
+  config.expect_with :rspec do |c|
+    c.syntax = :expect
+  end
+```
+
+#### modify spec/models/restaurant_spec.rb
+
+```ruby
+  require 'spec_helper'
+
+  describe Restaurant do
+    subject(:restaurant) { FactoryGirl.build(:restaurant, name: nil)}
+    it {expect(restaurant.valid?).to be_false}
+  end
+```
+
+#### expect red
+
+> rspec spec/models/restaurant_spec.rb
+
+#### modify app/models/restaurant.rb
+
+```ruby
+  class Restaurant < ActiveRecord::Base
+    validates_presence_of :name
+  end
+```
+
+#### expect green
+
+> rspec spec/models/restaurant_spec.rb
+
+> rails console
+
+> Restaurant.new
+
+> resturant = Restaurant.new(name: "john's cafe")
+
+> restaurant.save
+
+> Restaurant.count
+
+> Restaurant.last

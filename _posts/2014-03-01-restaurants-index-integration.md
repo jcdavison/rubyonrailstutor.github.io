@@ -4,6 +4,7 @@ title:  "Restaurants#Index & Integration Tests"
 date:   2014-03-01 11:26:42
 tags: integration
 categories: integration
+repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/Mo5j8eEbwbo?vq=hd1080" frameborder="0" allowfullscreen></iframe>

@@ -1,0 +1,6 @@
+PURPOSE
+
+  Hi I'm John Davison, founder of rubyonrailstutor.com.  I built this lite-weight application for my unique breed of online real time distributed pair programming classes.  Before I got into coding, I was a non-techincal MBA, prior U.S. Navy Officer, trying to learn the ropes of the San Francisco Tech scene.  Luckily, I got accepted into the second cohort of Dev Bootcamp.  Here I stand a year and half later having worked with 5 startups, worked on tons of personal products including the uber-social crowdsound.io.  My goal with rubyonrailstutor is to help other people who can't necessarily make it to SF to learn to code.  This application is both the curriculum for my classes and hopefully, a high quality open source tutorial for other beginners who want to get in on the fun.  Please connect with me at rubyonrailstutor.com and let me know if there is anything I can do to improve the quality of this site. 
+
+
+  - John Davison, @railstutor
