@@ -18,6 +18,14 @@ blockquote {
   color: #777;
 }
 
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
 body {
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
@@ -30,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
+
+.nomargin  {
+  margin: 0 !important;
+}
 
 a         { color: #00a; }
 a:hover   { color: #000; }
@@ -87,6 +99,7 @@ a:visited { color: #a0a; }
   color: #000;
 }
 
+
 .header a.extra {
   color: #aaa;
   margin-left: 1em;
@@ -103,12 +116,11 @@ a:visited { color: #a0a; }
 .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #eee;
   margin-top: 2em;
   overflow: hidden;
 }
 
-.footer .contact {
+.footer .contact, .header .contact {
   float: left;
   margin-right: 3em;
 }
