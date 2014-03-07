@@ -65,7 +65,7 @@
                 crossDomain: true,
                 type: "POST",
                 url: "https://www.rubyonrailstutor.com/join.json",
-                xhrFields: 'withCredentials': true,
+                xhrFields: {'withCredentials': true},
                 data: {first_name: "hacker", last_name: "github.io", email: "email" },
                 dataType: "JSON"
               })
