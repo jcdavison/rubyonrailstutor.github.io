@@ -1,0 +1,13 @@
+<div itemscope itemtype="http://schema.org/Code">
+  <div itemprop="description">{{post.description}}</div>
+  <div itemprop="codeRepository">{{post.repo}}</div>
+
+  <div itemprop="about">rubyonrailstutor.github.io is a free educational resource to help all people learn how to build software products</div>
+  <div itemprop="editor">link to jd</div>
+
+  // not sure I need to include this, the page seems good
+  <div itemscope itemtype="http://schema.org/VideoObject">
+    <div itemprop="description">screencast on xyz</div>
+    <div itemprop="name">name of xyz</div>
+  </div>
+</div>

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Restaurantly Restaurant Model"
+title:  "Ruby on Rails Restaurantly Restaurant Data Model"
 date:   2014-03-02 11:26:42
+language: ruby
 categories: ruby programming basics
 tags: restaurantlymodel
 categories: restaurantlymodel

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Restaurantly Connecting Data to Client"
+title:  "Ruby on Rails Restaurantly Connecting Data to Client"
 date:   2014-03-02 11:26:42
+language: ruby
 categories: ruby programming basics
 tags: restaurantlyui
 categories: restaurantlyui

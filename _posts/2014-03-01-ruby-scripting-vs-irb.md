@@ -3,6 +3,7 @@ layout: post
 title:  "Ruby Scripting vs IRB"
 date:   2014-03-01 11:26:42
 tags: rubybasics
+language: ruby
 categories: rubybasics
 repo: https://github.com/rubyonrailstutor/curriculum
 ---

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Restaurants#Index & Integration Tests"
+title:  "Ruby on Rails Restaurantly #index controller action & Integration Tests"
 date:   2014-03-01 11:26:42
+language: ruby
 tags: integration
 categories: integration
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index

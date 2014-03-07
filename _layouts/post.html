@@ -1,7 +1,13 @@
 ---
 layout: default
 ---
-<p class="meta">pull the code <a href={{ page.repo }}>{{ page.repo }}</a></p>
+<h1 class="textline">
+  <div itemprop="description" class="inline"> {{ page.title }} </div>
+  <input type="text" size="40" id="email" placeholder="join the mailing list,ie, 'you@gmail.com'" class="inline"></input>
+  <input type="submit" value="join!" id="join"></input>
+</h1>
+
+pull the code <a href={{ page.repo }}><div itemprop="codeRepository" class="inline">{{ page.repo }}</div></a>
 
 <div class="post">
 {{ content }}

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "User & Authorization Data Models"
+title:  "Ruby on Rails Restaurantly User & Authorization Data Models"
 date:   2014-03-01 11:26:42
+language: ruby
 tags: userauth
 categories: userauth
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Restaurantly App Setup"
+title:  "Ruby on Rails Restaurantly Application setup"
 date:   2014-03-02 11:26:42
+language: ruby
 tags: restaurantlysetup
 categories: restaurantlysetup
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup

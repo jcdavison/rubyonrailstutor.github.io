@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Restaurants#Show"
+title:  "Ruby on Rails Restaurantly #show controller action"
 date:   2014-03-01 11:26:42
 tags: show
+language: ruby
 categories: show
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/show-restaurant
 ---

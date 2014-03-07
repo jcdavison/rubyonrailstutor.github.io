@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Restaurants#Edit & Restaurants#Update & Restaurants#Destroy"
+title:  "Ruby on Rails Restaurantly #edit #update #destroy controller actions"
 date:   2014-03-01 11:26:42
+language: ruby
 tags: edit
 categories: edit
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit

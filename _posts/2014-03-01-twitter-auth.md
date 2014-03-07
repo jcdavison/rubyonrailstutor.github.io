@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Twitter Based Login"
+title:  "Ruby on Rails Restaurantly twitter based login"
 date:   2014-03-01 11:26:42
 tags: twitterauth
+language: ruby
 categories: twitterauth
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth
 ---

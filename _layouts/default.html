@@ -15,7 +15,7 @@
 
     </head>
     <body>
-
+      <div itemscope itemtype="http://schema.org/Code">
         <div class="site">
           <div class="header">
             <div class="contact">
@@ -30,7 +30,7 @@
                   <img src="https://dl.dropboxusercontent.com/u/12834645/railstutor/pairwithme.png" alt="Pair program with me!" />
                 </a></br>
               </p>
-                <p class="nomargin">all content and production by <a href="https://plus.google.com/u/0/+JohnDavison-railstutor/?rel=author" target="new" rel="author">John Davison</a></p>
+              <p class="nomargin">all content and production by <a href="https://plus.google.com/u/0/+JohnDavison-railstutor/?rel=author" target="new" rel="author">John Davison</a> | <a href="/">Home</a></p>
             </div>
           </div>
           {{ content }}
@@ -51,6 +51,27 @@
                 <p class="nomargin">all content and production by <a href="https://plus.google.com/u/0/+JohnDavison-railstutor/?rel=author" target="new" rel="author">John Davison</a></p>
             </div>
         </div>
+        <p class="meta"><div itemprop="about">rubyonrailstutor.github.io is a free educational resource aimed at helping people learn how to build useful software products.</div></p>
+      </div>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+        (function(){
+          var submitEmail = function () {
+            $("#join").click(function(e){
+              var email = $("#email").val()
+              if ( email.length === 0) { return false}
+              console.log(email)
+              $.ajax({
+                crossDomain: true,
+                type: "POST",
+                url: "https://www.rubyonrailstutor.com/join",
+                data: {first_name: "hacker", last_name: "github.io", email: email }
+              })
+            });
+          }
+          submitEmail()
+        })();
+      </script>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

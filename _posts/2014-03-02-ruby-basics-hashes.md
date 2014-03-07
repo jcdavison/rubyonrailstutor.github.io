@@ -2,6 +2,7 @@
 layout: post
 title:  "Ruby Basics, Hashes"
 date:   2014-03-02 11:26:42
+language: ruby
 tags: rubybasics
 categories: rubybasics
 repo: https://github.com/rubyonrailstutor/curriculum

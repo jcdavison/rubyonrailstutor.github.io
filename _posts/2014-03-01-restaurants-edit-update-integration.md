@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "#Edit & #Update Integration Tests"
+title:  "Ruby on Rails Restaurantly #edit & #update controller actions & Integration Tests"
 date:   2014-03-01 11:26:42
 tags: integration
+language: ruby
 categories: editupdateintegration
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-integration
 ---

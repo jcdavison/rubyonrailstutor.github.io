@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Restaurants#New & Restaurants#Create"
+title:  "Ruby on Rails Restaurantly #new #create controller actions & Integration Tests"
 date:   2014-03-01 11:26:42
+language: ruby
 tags: new
 categories: new
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
