@@ -70,6 +70,12 @@
                   email: email,
                   applied: "false"},
                 dataType: "JSON"
+                success: function (data) {
+                  console.log("this worked", data)
+                },
+                error: function (data) {
+                  console.log("error", data)
+                }
               })
             });
           }
