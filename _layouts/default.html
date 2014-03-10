@@ -70,16 +70,20 @@
                   email: email,
                   applied: "false"},
                 dataType: "JSON"
-                success: function (data) {
-                  console.log("this worked", data)
-                },
-                error: function (data) {
-                  console.log("error", data)
-                }
               })
             });
           }
+
+          var corsResponse = function () {
+            $(document).bind("ajaxSuccess", function(data) {
+              console.log("success", data);
+            });
+            $(document).bind("ajaxError", function(data) {
+              console.log("error", data);
+            });
+          }
           submitEmail()
+          corsResponse()
         })();
       </script>
       <script>
