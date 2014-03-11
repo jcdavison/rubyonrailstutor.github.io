@@ -31,7 +31,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 
 #### modify spec/spec_helper.rb
 
-~~~ ruby
+~~~ruby
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
