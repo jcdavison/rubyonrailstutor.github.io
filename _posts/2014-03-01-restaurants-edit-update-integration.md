@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Restaurantly#edit, #update & integration tests"
+title:  "Restaurantly#edit, #update integration tests"
 date:   2014-03-01 11:26:42
 tags: free ruby coding resources capybara integration testing
 language: ruby

@@ -5,6 +5,8 @@ disqus_shortname:
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
 url:              http://rubyonrailstutor.github.io
+name:             Free Ruby on Rails Coding Resources
+
 
 # Owner/author information
 owner:
@@ -37,7 +39,7 @@ links:
     url: /articles/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/San_Francisco
+timezone:    America/Los_Angeles
 future:      true
 pygments:    true
 markdown:    kramdown

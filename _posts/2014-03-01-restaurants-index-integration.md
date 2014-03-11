@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Restaurantly #index & integration"
+title:  "Restaurantly #index integration"
 date:   2014-03-01 11:26:42
 language: ruby
 tags: free ruby coding resources integrationtesting

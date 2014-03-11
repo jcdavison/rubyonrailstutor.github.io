@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Restaurantly User & Authorization data models"
+title:  "Restaurantly User Authorization data models"
 date:   2014-03-01 11:26:42
 language: ruby
 tags: free ruby coding resources userauth
@@ -9,7 +9,6 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/YYRyg3aZWDQ?vq=hd1080" frameborder="0" allowfullscreen></iframe>
-
 
 
 # purpose  - setup up user and authorization models to build prepare for twitter based login and session management.
