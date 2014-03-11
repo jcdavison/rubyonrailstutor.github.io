@@ -3,8 +3,8 @@ layout: post
 title:  "Bengal Tigers"
 date:   2014-03-01 11:26:42
 language: ruby
-tags: rubyonrailstutorpods
-categories: rubyonrailstutorpods
+tags: captainslog
+categories: cohorts
 repo: https://github.com/rubyonrailstutor/rubyonrailstutor.github.io
 ---
 

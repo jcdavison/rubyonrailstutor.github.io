@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly #new #create controller actions & Integration Tests"
+title:  "Restuarantly #new #create"
 date:   2014-03-01 11:26:42
 language: ruby
-tags: new
+tags: free ruby coding resources new create
 categories: new
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 ---

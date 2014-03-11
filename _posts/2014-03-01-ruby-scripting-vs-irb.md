@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Ruby Scripting vs IRB"
+title:  "Ruby Scripting vs Irb"
 date:   2014-03-01 11:26:42
-tags: rubybasics
+tags: free ruby coding resources rubybasics
 language: ruby
-categories: rubybasics
+categories: articles
 repo: https://github.com/rubyonrailstutor/curriculum
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/xAMhGpiYeEw?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
-```ruby
+~~~ ruby
 # defining and invoking methods, using a script file
 # join a social pair programming class http://www.rubyonrailstutor.com
 
@@ -80,4 +80,4 @@ nil.class
 [ nil, 1, true, false ].compact
 
 # join a social pair programming class http://www.rubyonrailstutor.com
-```
+~~~ 

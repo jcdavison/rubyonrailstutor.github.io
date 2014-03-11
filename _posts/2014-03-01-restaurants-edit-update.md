@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly #edit #update #destroy controller actions"
+title:  "Restaurantly#edit #update #destroy controller actions"
 date:   2014-03-01 11:26:42
 language: ruby
-tags: edit
+tags: free ruby coding resources edit update destroy 
 categories: edit
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit
 ---
@@ -17,7 +17,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit
 
 ### modify spec/requests/resaurants_spec.rb
 
-```ruby
+~~~ ruby
   context "GET /restaurants/:id/edit" do
     before do
       @restaurant = FactoryGirl.create :restaurant
@@ -33,7 +33,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit
       it { expect(subject).to redirect_to(:root) }
     end
   end
-```
+~~~ 
 
 > rspec spec/requests/restaurant_spec.rb
 
@@ -42,7 +42,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit
 
 > modify app/controllers/restaurants_controller.rb
 
-```ruby
+~~~ ruby
   def edit
     @restaurant = Restaurant.find_by_id params[:id]
     if @restaurant
@@ -51,27 +51,27 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit
       redirect_to root_path
     end
   end
-```
+~~~ 
 
 > modify app/views/restaurants/edit.html.haml
 
-```haml
+~~~ haml
   .row
     .large-8.columns.large-centered
       = form_for @restaurant do |restaurant|
         = restaurant.text_field :name
         = restaurant.submit "update", class: "button"
-```
+~~~ 
 
 > modify index.html.haml
 
-```haml
+~~~ haml
   = link_to "edit", edit_restaurant_path(restaurant)
-```
+~~~ 
 
 > modify spec/requests/resaurants_spec.rb
 
-```ruby
+~~~ ruby
   context "PUT /restaurants/:id" do
     context "complete params" do
       before do
@@ -87,14 +87,14 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit
       it { expect(subject).to redirect_to root_path }
     end
   end
-```
+~~~ 
 
 > rspec spec/requests/restaurant_spec.rb
 
 
 > modify app/controllers/restaurants_controller.rb
 
-```ruby
+~~~ ruby
   def update
     @restaurant = Restaurant.find_by_id params[:id]
     if @restaurant
@@ -106,11 +106,11 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit
       redirect_to root_path
     end
   end
-```
+~~~ 
 
 > modify spec/requests/resaurants_spec.rb
 
-```ruby
+~~~ ruby
   context "DELETE /restaurants/:id" do
     context "complete params" do
       before do
@@ -120,22 +120,22 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit
       it { expect(subject).to redirect_to root_path }
     end
   end
-```
+~~~ 
 
 > modify app/controllers/restaurants_controller.rb
 
-```ruby
+~~~ ruby
   def destroy
     @restaurant = Restaurant.find_by_id params[:id]
     @restaurant.destroy
     redirect_to root_path
   end
-```
+~~~ 
 
 > modify index.html.haml
 
-```haml
+~~~ haml
   = link_to "destroy", restaurant_path(restaurant), method: :delete
-```
+~~~ 
 
 > verify in browser, visit http://localhost:3000/

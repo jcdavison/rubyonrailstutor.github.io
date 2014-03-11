@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly Restaurant Data Model"
+title:  "Restaurantly Restaurant Data Model"
 date:   2014-03-02 11:26:42
 language: ruby
-categories: ruby programming basics
-tags: restaurantlymodel
-categories: restaurantlymodel
+tags: free ruby coding resources rails data models
+categories: datamodels
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 ---
 
@@ -18,9 +17,9 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 
 #### pro tip setup 'be' in ~/.bash_profile or ~/.bashrc
 
-```sh
+~~~ sh
   alias be='bundle exec'
-```
+~~~ 
 
 ### then type source ~/.bash_profile or ~/.bashrc
 
@@ -32,22 +31,22 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 
 #### modify spec/spec_helper.rb
 
-```ruby
+~~~ ruby
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
-```
+~~~ 
 
 #### modify spec/models/restaurant_spec.rb
 
-```ruby
+~~~ ruby
   require 'spec_helper'
 
   describe Restaurant do
     subject(:restaurant) { FactoryGirl.build(:restaurant, name: nil)}
     it {expect(restaurant.valid?).to be_false}
   end
-```
+~~~ 
 
 #### expect red
 
@@ -55,11 +54,11 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 
 #### modify app/models/restaurant.rb
 
-```ruby
+~~~ ruby
   class Restaurant < ActiveRecord::Base
     validates_presence_of :name
   end
-```
+~~~ 
 
 #### expect green
 

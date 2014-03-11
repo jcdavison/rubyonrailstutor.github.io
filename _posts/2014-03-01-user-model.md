@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly User & Authorization Data Models"
+title:  "Restaurantly User & Authorization data models"
 date:   2014-03-01 11:26:42
 language: ruby
-tags: userauth
+tags: free ruby coding resources userauth
 categories: userauth
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 ---
@@ -22,10 +22,10 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify Gemfile.rb
 
-```ruby
+~~~ ruby
   #user auth
   gem 'devise', '3.0.0'
-```
+~~~ 
 
 
 > bundle install
@@ -48,14 +48,14 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify spec/models/authorization.rb
 
-```ruby
+~~~ ruby
   context "required attributes" do
     context "uid" do
       subject {FactoryGirl.build :authorization, uid: nil}
       it { expect(subject.save).to be_false }
     end
   end
-```
+~~~ 
 
 > bundle exec rake db:test:prepare
 
@@ -67,16 +67,16 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify app/models/authorizations.rb
 
-```ruby
+~~~ ruby
   validates_presence_of :uid
-```
+~~~ 
 
 > rspec spec/models/authorization_spec.rb
 
 
 ### expect green
 
-```ruby
+~~~ ruby
   context "unique attributes" do
     context "uid" do
       before do
@@ -86,7 +86,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
       it { expect(subject.save).to be_false }
     end
   end
-```
+~~~ 
 
 > rspec spec/models/authorization_spec.rb
 
@@ -95,9 +95,9 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify app/models/authorizations.rb
 
-```ruby
+~~~ ruby
   validates_uniqueness_of :uid
-```
+~~~ 
 
 > rspec spec/models/authorization_spec.rb
 
@@ -109,15 +109,15 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify app/models/user.rb
 
-```ruby
+~~~ ruby
   has_many :authorizations
-```
+~~~ 
 
 #### modify app/models/authorizations.rb
 
-```ruby
+~~~ ruby
   belongs_to :user
-```
+~~~ 
 
 > verify in rails console
 

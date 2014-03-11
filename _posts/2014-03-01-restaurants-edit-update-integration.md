@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly #edit & #update controller actions & Integration Tests"
+title:  "Restaurantly#edit, #update & integration tests"
 date:   2014-03-01 11:26:42
-tags: integration
+tags: free ruby coding resources capybara integration testing
 language: ruby
 categories: editupdateintegration
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-integration
@@ -17,7 +17,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
 
 > modify spec/features/restaurants_spec.rb
 
-```ruby
+~~~ ruby
   describe "edit links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -32,12 +32,11 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
       end
     end
   end
-
-```
+~~~
 
 > rspec spect/features/restaurant_spec.rb
 
-```ruby
+~~~ ruby
   describe "destroy links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -51,6 +50,6 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
       end
     end
   end
-```
+~~~
 
 > rspec spect/features/restaurant_spec.rb

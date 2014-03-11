@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Ruby Basics, Strings"
+title:  "Ruby String"
 date:   2014-03-04 11:26:42
 language: ruby
-tags: rubybasics
-categories: rubybasics
+tags: free ruby coding resources string
+categories: basics
 repo: https://github.com/rubyonrailstutor/curriculum
 ---
 <iframe width="640" height="360" src="//www.youtube.com/embed/w2x0VtVlxX8?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
 
-```ruby
+~~~ ruby
 # http://ruby-doc.org/core-2.1.1/String.html
 # join a social pair programming class http://www.rubyonrailstutor.com
 
@@ -61,4 +61,4 @@ letter.join("")
 name = letter.join("")
 
 # join a social pair programming class http://www.rubyonrailstutor.com
-```
+~~~ 

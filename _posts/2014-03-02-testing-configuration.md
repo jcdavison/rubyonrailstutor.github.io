@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly Testing Configuration"
+title:  "Restaurantly Testing Configuration"
 date:   2014-03-02 11:26:42
 language: ruby
-categories: ruby programming basics
-tags: testingconfiguration
-categories: testingconfiguration
+tags: free ruby coding resources testingconfiguration
+categories: testingconfig
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/test-setup
 ---
 
@@ -14,16 +13,16 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/test-setup
 
 #### modify Gemfile
 
-```ruby 
+~~~ ruby 
   gem 'selenium-webdriver'
   gem 'database_cleaner', '~> 1.2.0'
-```
+~~~ 
 
 > bundle install
 
 > mkdir spec/support/ | touch spec/support/database_cleaner.rb
 
-```ruby
+~~~ ruby
   # props to @avdi
   # http://devblog.avdi.org/2012/08/31/configuring-database_cleaner-with-rails-rspec-capybara-and-selenium/
 
@@ -50,29 +49,29 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/test-setup
     end
 
   end
-```
+~~~ 
 
 #### modify app/assets/javascripts/application.js
 
 
-```javascript
+~~~ javascript
   # remove //= turbolinks
-```
+~~~ 
 
 > touch app/assets/stylesheets/restaurants.css.scss
 
 
 #### modify app/assets/stylesheets/restaurants.css.scss
 
-```css
+~~~ css
   .center {
     text-align:center;
   }
-```
+~~~ 
 
 #### modify config/routes.rb
 
-```ruby
+~~~ ruby
   root to: "restaurants#index"
-```
+~~~ 
 

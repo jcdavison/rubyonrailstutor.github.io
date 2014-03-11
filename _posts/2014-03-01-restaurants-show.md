@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly #show controller action"
+title:  "Restaurantly#show"
 date:   2014-03-01 11:26:42
-tags: show
+tags: free ruby coding resources show
 language: ruby
 categories: show
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/show-restaurant
@@ -41,7 +41,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/show-restaurant
 
 > modify spec/requests/restaurant_spec.rb
 
-```ruby
+~~~ ruby
 
 require 'spec_helper'
 
@@ -63,7 +63,7 @@ describe RestaurantsController do
   end
 end
 
-```
+~~~ 
 
 #### expect red
 
@@ -72,7 +72,7 @@ end
 
 > modify app/controllers/restaurants_controller.rb
 
-```ruby
+~~~ ruby
 
 def show
   @restaurant = Restaurant.find_by_id params[:id]
@@ -84,7 +84,7 @@ def show
   end
 end
 
-```
+~~~ 
 
 #### expect green 
 
@@ -93,11 +93,11 @@ end
 
 > modify app/views/restaurants/show.html.haml
 
-```haml
+~~~ haml
 .row
   .large-8.columns.large-centered
     %h1
       = @restaurant.name
-```
+~~~ 
 
 > verify & visit http://localhost:3000/restaurants/:id

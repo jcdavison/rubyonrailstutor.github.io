@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly #index controller action & Integration Tests"
+title:  "Restaurantly #index & integration"
 date:   2014-03-01 11:26:42
 language: ruby
-tags: integration
+tags: free ruby coding resources integrationtesting
 categories: integration
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 ---
@@ -16,22 +16,22 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify spec/requests/restaurant_spec.rb
 
-```ruby
+~~~ ruby
   context "GET /" do
     subject { get "/" }
     it "renders index" do
       expect(subject).to render_template(:index)
     end
   end
-```
+~~~ 
 
 > modify app/controllers/restaurants_controller.rb
 
-```ruby
+~~~ ruby
   def index
     @restaurants = Restaurant.all
   end
-```
+~~~ 
 
 > rspec spec/requests/restaurants_spec.rb
 
@@ -40,7 +40,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify index.html.haml
 
-```haml
+~~~ haml
   .row
     .large-8.columns.large-centered
       %h3.subheader.center
@@ -50,7 +50,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       - @restaurants.each do |restaurant|
         %h5.subheader
           = restaurant.name
-```
+~~~ 
 
 > verify in browser, visit http://localhost:3000/index.html.haml
 
@@ -61,7 +61,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify spec/features/restaurants_spec.rb
 
-```ruby
+~~~ ruby
   describe "edit links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -76,7 +76,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       end
     end
   end
-```
+~~~ 
 
 > rspec spec/features/restaurants_spec.rb
 
@@ -84,7 +84,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 ### expect green
 
 
-```ruby
+~~~ ruby
   describe "destroy links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -98,7 +98,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       end
     end
   end
-```
+~~~ 
 
 > rspec spec/features/restaurants_spec.rb
 

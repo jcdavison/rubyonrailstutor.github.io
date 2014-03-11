@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly Connecting Data to Client"
+title:  "Restaurantly Connecting Data to Client"
 date:   2014-03-02 11:26:42
 language: ruby
-categories: ruby programming basics
-tags: restaurantlyui
-categories: restaurantlyui
+tags: free ruby coding resources MVC
+categories: mvc
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_ui
 ---
 
@@ -14,21 +13,21 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_ui
 
 #### modify config/application.rb
 
-```ruby
+~~~ ruby
     config.generators do |generate|
       generate.helper false
       generate.assets false
       generate.view_specs false
     end
-```
+~~~ 
 
 > rails g contoller restaurants show index new create edit update destroy
 
 #### modify config/routes.rb
 
-```ruby
+~~~ ruby
   resources :restaurants
-```
+~~~ 
 
 > bundle exec rake routes
 
@@ -38,9 +37,9 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_ui
 
 #### pro tip add gs alias to ~/.bash_rc or ~/.bash_profile
 
-```sh
+~~~ sh
   alias gs='git status'
-```
+~~~ 
 
 > gs 
 

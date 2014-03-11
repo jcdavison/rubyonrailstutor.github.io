@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Ruby on Rails development environment setup via koding.com"
+title:  "koding.com ruby on rails setup"
 date:   2014-03-01 11:26:42
 language: ruby
-tags: kodingsetup
-categories: kodingsetup
+tags: free ruby coding resources kodingsetup
+categories: setup
 repo: https://github.com/rubyonrailstutor/restaurantly/
 ---
 

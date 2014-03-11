@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly twitter based login"
+title:  "Restaurantly twitter-omniauth login"
 date:   2014-03-01 11:26:42
-tags: twitterauth
 language: ruby
+tags: free ruby coding resources omniauth twitter login
 categories: twitterauth
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth
 ---
@@ -17,10 +17,10 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth
 
 #### modify Gemfile.rb
 
-```ruby
+~~~ ruby
   gem 'omniauth'
   gem 'omniauth-twitter'
-```
+~~~ 
 
 
 
@@ -28,20 +28,20 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth
 
 > touch app/views/layouts/_sign_in.haml
 
-```haml
+~~~ haml
   .row
     .large-2.columns.large-centered
       - unless current_user
         = link_to "Sign Up/In", "/users/auth/twitter", class: "button small radius"
       - else
         = link_to "logout", destroy_user_session_path, method: "DELETE"
-```
+~~~ 
 
 #### modify app/views/layouts/application.html.erb
 
-```erb
+~~~ erb
   <%= render "layouts/sign_in" %>
-```
+~~~ 
 
 #### create a new app on twitter
 
@@ -58,36 +58,36 @@ http://127.0.0.1/auth/twitter/callback
 
 #### set environmental variables in ~/.bash_profile
 
-```sh
+~~~ sh
   export RESTAURANTLY_TWITTER_KEY='yourspecialkey'
   export RESTAURANTLY_TWITTER_SECRET='yourspecialsecret'
-```
+~~~ 
 
 > source ~/.bash_profile
 
 #### modify config/initializers/devise.rb
 
-```ruby
+~~~ ruby
   config.omniauth :twitter, ENV['RESTAURANTLY_TWITTER_KEY'], ENV['RESTAURANTLY_TWITTER_SECRET']
-```
+~~~ 
 
 #### modify config/routes.rb
 
-```ruby
+~~~ ruby
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks"}
-```
+~~~ 
 
 #### modify app/models/user.rb
 
-```ruby
+~~~ ruby
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
-```
+~~~ 
 
 > mkdir app/controllers/users | touch app/controllers/users/omniauth_callbacks_controller.rb
 
 
-```ruby
+~~~ ruby
   # props to @auser
   # the below is mangled a bit from https://leanpub.com/angularjs-rails
 
@@ -129,7 +129,7 @@ http://127.0.0.1/auth/twitter/callback
     end
 
   end
-```
+~~~ 
 
 #### resources
 

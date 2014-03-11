@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Ruby on Rails Restaurantly Application setup"
+title:  "Restaurantly Application setup"
 date:   2014-03-02 11:26:42
 language: ruby
-tags: restaurantlysetup
-categories: restaurantlysetup
+tags: free ruby coding resources railssetup
+categories: setup
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
 ---
 
@@ -40,7 +40,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
 #### update Gemfile
 
 
-```ruby
+~~~ ruby
   source 'https://rubygems.org'
 
   # application gems
@@ -69,7 +69,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
   group :doc do
     gem 'sdoc', require: false
   end
-```
+~~~ 
 
 > bundle install
 
@@ -80,7 +80,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
 
 #### update config/database.yml
 
-```
+~~~ 
   development:
     adapter: postgresql
     encoding: unicode
@@ -96,7 +96,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
     pool: 5
     host: localhost
     port: 5432
-```
+~~~ 
 
 > bundle exec rake db:create
 
