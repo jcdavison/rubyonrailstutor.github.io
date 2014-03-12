@@ -10,7 +10,7 @@ repo: https://github.com/rubyonrailstutor/curriculum
 <iframe width="640" height="360" src="//www.youtube.com/embed/w2x0VtVlxX8?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
 
-{% highlight ruby %}
+``` ruby 
   # http://ruby-doc.org/core-2.1.1/String.html
   # join a social pair programming class http://www.rubyonrailstutor.com
 
@@ -61,4 +61,12 @@ repo: https://github.com/rubyonrailstutor/curriculum
   name = letter.join("")
 
   # join a social pair programming class http://www.rubyonrailstutor.com
-{% endhighlight %}
+```
+
+
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script type="text/javascript">
+  hljs.configure({classPrefix: ''});
+  hljs.initHighlightingOnLoad();
+</script>
