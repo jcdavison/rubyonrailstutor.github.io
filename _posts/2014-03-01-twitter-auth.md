@@ -39,7 +39,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth
 
 #### modify app/views/layouts/application.html.erb
 
-{% highlight erb %}
+{% highlight %}
   <%= render "layouts/sign_in" %>
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ http://127.0.0.1/auth/twitter/callback
 
 #### set environmental variables in ~/.bash_profile
 
-{% highlight sh %}
+{% highlight ruby %}
   export RESTAURANTLY_TWITTER_KEY='yourspecialkey'
   export RESTAURANTLY_TWITTER_SECRET='yourspecialsecret'
 {% endhighlight %}
