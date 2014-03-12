@@ -17,9 +17,9 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 
 #### pro tip setup 'be' in ~/.bash_profile or ~/.bashrc
 
-{% highlight sh %}
+```
   alias be='bundle exec'
-{% endhighlight %}
+```
 
 ### then type source ~/.bash_profile or ~/.bashrc
 
@@ -31,22 +31,22 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 
 #### modify spec/spec_helper.rb
 
-{% highlight ruby %}
+```
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
-{% endhighlight %}
+```
 
 #### modify spec/models/restaurant_spec.rb
 
-{% highlight ruby %}
+```
   require 'spec_helper'
 
   describe Restaurant do
     subject(:restaurant) { FactoryGirl.build(:restaurant, name: nil)}
     it {expect(restaurant.valid?).to be_false}
   end
-{% endhighlight %}
+```
 
 #### expect red
 
@@ -54,11 +54,11 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 
 #### modify app/models/restaurant.rb
 
-{% highlight ruby %}
+```
   class Restaurant < ActiveRecord::Base
     validates_presence_of :name
   end
-{% endhighlight %}
+```
 
 #### expect green
 

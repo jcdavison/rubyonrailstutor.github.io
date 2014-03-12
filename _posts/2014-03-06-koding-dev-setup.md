@@ -47,9 +47,9 @@ repo: https://github.com/rubyonrailstutor/restaurantly/
 #### modify ~/.gemrc with the ace koding tool
 #### we don't want docs installed, it is slow
 
-{% highlight ruby %}
+```
   gem: --no-document
-{% endhighlight %}
+```
 
 ### install rails 
 

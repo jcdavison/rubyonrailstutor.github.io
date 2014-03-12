@@ -21,10 +21,10 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify Gemfile.rb
 
-{% highlight ruby %}
+```
   #user auth
   gem 'devise', '3.0.0'
-{% endhighlight %}
+```
 
 
 > bundle install
@@ -47,14 +47,14 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify spec/models/authorization.rb
 
-{% highlight ruby %}
+```
   context "required attributes" do
     context "uid" do
       subject {FactoryGirl.build :authorization, uid: nil}
       it { expect(subject.save).to be_false }
     end
   end
-{% endhighlight %}
+```
 
 > bundle exec rake db:test:prepare
 
@@ -66,16 +66,16 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify app/models/authorizations.rb
 
-{% highlight ruby %}
+```
   validates_presence_of :uid
-{% endhighlight %}
+```
 
 > rspec spec/models/authorization_spec.rb
 
 
 ### expect green
 
-{% highlight ruby %}
+```
   context "unique attributes" do
     context "uid" do
       before do
@@ -85,7 +85,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
       it { expect(subject.save).to be_false }
     end
   end
-{% endhighlight %}
+```
 
 > rspec spec/models/authorization_spec.rb
 
@@ -94,9 +94,9 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify app/models/authorizations.rb
 
-{% highlight ruby %}
+```
   validates_uniqueness_of :uid
-{% endhighlight %}
+```
 
 > rspec spec/models/authorization_spec.rb
 
@@ -108,15 +108,15 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 
 #### modify app/models/user.rb
 
-{% highlight ruby %}
+```
   has_many :authorizations
-{% endhighlight %}
+```
 
 #### modify app/models/authorizations.rb
 
-{% highlight ruby %}
+```
   belongs_to :user
-{% endhighlight %}
+```
 
 > verify in rails console
 

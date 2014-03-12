@@ -9,7 +9,7 @@ repo: https://github.com/rubyonrailstutor/curriculum
 ---
 <iframe width="640" height="360" src="//www.youtube.com/embed/WM9OeZnunno?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
-{% highlight ruby %}
+```
 # http://ruby-doc.org/core-2.1.1/Hash.html
 # join a social pair programming class http://www.rubyonrailstutor.com
 
@@ -31,4 +31,4 @@ nested_hash = { people: { coders: ["john davison", "mike the mechanic", "sally f
 people = person.keep_if {|key, value| key == :people}
 
 # join a social pair programming class http://www.rubyonrailstutor.com
-{% endhighlight %}
+```

@@ -41,7 +41,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/show-restaurant
 
 > modify spec/requests/restaurant_spec.rb
 
-{% highlight ruby %}
+```
 
 require 'spec_helper'
 
@@ -63,7 +63,7 @@ describe RestaurantsController do
   end
 end
 
-{% endhighlight %}
+```
 
 #### expect red
 
@@ -72,7 +72,7 @@ end
 
 > modify app/controllers/restaurants_controller.rb
 
-{% highlight ruby %}
+```
 
 def show
   @restaurant = Restaurant.find_by_id params[:id]
@@ -84,7 +84,7 @@ def show
   end
 end
 
-{% endhighlight %}
+```
 
 #### expect green 
 
@@ -93,11 +93,11 @@ end
 
 > modify app/views/restaurants/show.html.haml
 
-{% highlight haml %}
+```
 .row
   .large-8.columns.large-centered
     %h1
       = @restaurant.name
-{% endhighlight %}
+```
 
 > verify & visit http://localhost:3000/restaurants/:id

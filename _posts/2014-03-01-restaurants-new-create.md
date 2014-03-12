@@ -22,7 +22,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 > modify spec/requests/restaurants_spec.rb
 
 
-{% highlight ruby %}
+```
   context "GET /restaurants/new" do
     subject {get "/restaurants/new" }
 
@@ -30,8 +30,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
       expect(subject).to render_template(:new)
     end
   end
-{% endhighlight %}
-
+```
 
 >rspec spec/requests/restaurants_spec.rb
 
@@ -41,15 +40,15 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 
 > modify app/controllers/restaurants_controller#new
 
-{% highlight ruby %}
+```
   def new
     @restaurant = Restaurant.new
   end
-{% endhighlight %}
+```
 
 > modify app/views/restaurants/new.html.haml
 
-{% highlight haml %}
+```
   .row
     .large-8.columns.large-centered
       = form_for @restaurant do |restaurant|
@@ -59,7 +58,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
     .large-8.columns.large-centered
       %h3.subheader.center
         New Restaurantly Spots!
-{% endhighlight %}
+```
 
 > verify in browser, visit http://localhost:3000/restaurants/new
 
@@ -70,7 +69,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 
 > modify /spec/requests/restaurants_spec.rb
 
-{% highlight ruby %}
+```
   context "POST /restaurants" do
     context "complete params" do
       restaurant = {restaurant: {name: "mcrails"}}
@@ -87,7 +86,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
       end
     end
   end
-{% endhighlight %}
+```
 
 
 > rspec spec/requests/restaurants_spec.rb
@@ -99,7 +98,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 > modify app/controllers/restaurants_controller.rb
 
 
-{% highlight ruby %}
+```
   def create
     name = params[:restaurant][:name] if params[:restaurant]
     @restaurant = Restaurant.new name: name
@@ -111,7 +110,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
       redirect_to new_restaurant_path
     end
   end
-{% endhighlight %}
+```
 
 
 > rspec spec/requests/restaurants_spec.rb
