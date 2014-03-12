@@ -17,7 +17,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
 
 > modify spec/features/restaurants_spec.rb
 
-{% highlight ruby %}
+```ruby
   describe "edit links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -32,11 +32,11 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
       end
     end
   end
-{% endhighlight %}
+```
 
 > rspec spect/features/restaurant_spec.rb
 
-{% highlight ruby %}
+```ruby
   describe "destroy links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -50,6 +50,6 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
       end
     end
   end
-{% endhighlight %}
+```
 
 > rspec spect/features/restaurant_spec.rb
