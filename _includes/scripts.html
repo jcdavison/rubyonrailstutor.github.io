@@ -66,9 +66,7 @@
         var last = $("#last").val()
         var twitter = $("#twitter").val()
         var email = $("#email").val()
-        if ( email.length === 0) { console.log("no email");return false;}
-        console.log(first, last, twitter, email)
-        console.log(email)
+        if ( email.length === 0) {return false;}
         $.ajax({
           crossDomain: true,
           type: "POST",
