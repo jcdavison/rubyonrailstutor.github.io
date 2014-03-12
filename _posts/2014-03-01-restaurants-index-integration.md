@@ -16,22 +16,22 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify spec/requests/restaurant_spec.rb
 
-{% highlight ruby %}
+```ruby
   context "GET /" do
     subject { get "/" }
     it "renders index" do
       expect(subject).to render_template(:index)
     end
   end
-{% endhighlight %}
+```
 
 > modify app/controllers/restaurants_controller.rb
 
-{% highlight ruby %}
+```ruby
   def index
     @restaurants = Restaurant.all
   end
-{% endhighlight %}
+```
 
 > rspec spec/requests/restaurants_spec.rb
 
@@ -40,7 +40,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify index.html.haml
 
-{% highlight haml %}
+```
   .row
     .large-8.columns.large-centered
       %h3.subheader.center
@@ -50,7 +50,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       - @restaurants.each do |restaurant|
         %h5.subheader
           = restaurant.name
-{% endhighlight %}
+```
 
 > verify in browser, visit http://localhost:3000/index.html.haml
 
@@ -61,7 +61,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify spec/features/restaurants_spec.rb
 
-{% highlight ruby %}
+```ruby
   describe "edit links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -76,7 +76,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       end
     end
   end
-{% endhighlight %}
+```
 
 > rspec spec/features/restaurants_spec.rb
 
@@ -84,7 +84,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 ### expect green
 
 
-{% highlight ruby %}
+```ruby
   describe "destroy links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -98,7 +98,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       end
     end
   end
-{% endhighlight %}
+```
 
 > rspec spec/features/restaurants_spec.rb
 
