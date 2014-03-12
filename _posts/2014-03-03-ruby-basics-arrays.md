@@ -10,7 +10,7 @@ repo: https://github.com/rubyonrailstutor/curriculum
 <iframe width="640" height="360" src="//www.youtube.com/embed/X4gutclFQ7M?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
 
-~~~ ruby
+{% highlight ruby %}
 # http://ruby-doc.org/core-2.1.1/Array.html
 # join a social pair programming class http://www.rubyonrailstutor.com
 
@@ -66,4 +66,4 @@ numbers.inject(:+)
 numbers.reduce(100) {|initial_value, n| initial_value + n }
 
 # join a social pair programming class http://www.rubyonrailstutor.com
-~~~ 
+{% endhighlight %}

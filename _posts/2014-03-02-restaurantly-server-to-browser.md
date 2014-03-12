@@ -13,21 +13,21 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_ui
 
 #### modify config/application.rb
 
-~~~ ruby
+{% highlight ruby %}
     config.generators do |generate|
       generate.helper false
       generate.assets false
       generate.view_specs false
     end
-~~~ 
+{% endhighlight %}
 
 > rails g contoller restaurants show index new create edit update destroy
 
 #### modify config/routes.rb
 
-~~~ ruby
+{% highlight ruby %}
   resources :restaurants
-~~~ 
+{% endhighlight %}
 
 > bundle exec rake routes
 
@@ -37,9 +37,9 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_ui
 
 #### pro tip add gs alias to ~/.bash_rc or ~/.bash_profile
 
-~~~ sh
+{% highlight sh %}
   alias gs='git status'
-~~~ 
+{% endhighlight %}
 
 > gs 
 

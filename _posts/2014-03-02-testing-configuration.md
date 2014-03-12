@@ -13,16 +13,16 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/test-setup
 
 #### modify Gemfile
 
-~~~ ruby 
+{% highlight ruby %}
   gem 'selenium-webdriver'
   gem 'database_cleaner', '~> 1.2.0'
-~~~ 
+{% endhighlight %}
 
 > bundle install
 
 > mkdir spec/support/ | touch spec/support/database_cleaner.rb
 
-~~~ ruby
+{% highlight ruby %}
   # props to @avdi
   # http://devblog.avdi.org/2012/08/31/configuring-database_cleaner-with-rails-rspec-capybara-and-selenium/
 
@@ -49,29 +49,28 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/test-setup
     end
 
   end
-~~~ 
+{% endhighlight %}
 
 #### modify app/assets/javascripts/application.js
 
 
-~~~ javascript
+{% highlight javascript %}
   # remove //= turbolinks
-~~~ 
+{% endhighlight %}
 
 > touch app/assets/stylesheets/restaurants.css.scss
 
 
 #### modify app/assets/stylesheets/restaurants.css.scss
 
-~~~ css
+{% highlight css %}
   .center {
     text-align:center;
   }
-~~~ 
+{% endhighlight %}
 
 #### modify config/routes.rb
 
-~~~ ruby
+{% highlight ruby %}
   root to: "restaurants#index"
-~~~ 
-
+{% endhighlight %}
