@@ -1,9 +1,13 @@
 source 'https://rubygems.org'
+ruby "2.1.0"
 
-gem 'jekyll'
-gem 'kramdown'
+# required by so-simple
+gem 'jekyll', '1.4.3'
+gem 'kramdown', '1.3.1'
 gem 'coderay'
-gem 'rake'
-gem 'thor'
 gem 'activesupport'
 gem 'stringex'
+
+# used to mirror github dev env
+gem 'maruku', '0.7.0'
+gem "github-pages", "~> 15"
