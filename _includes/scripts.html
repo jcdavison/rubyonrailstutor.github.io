@@ -53,5 +53,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script src="{{ site.url }}/assets/js/vendor/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 {% endif %}
 {% if page.comments %}{% include disqus_comments.html %}{% endif %}

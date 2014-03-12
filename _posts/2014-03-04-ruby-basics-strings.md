@@ -62,11 +62,3 @@ repo: https://github.com/rubyonrailstutor/curriculum
 
   # join a social pair programming class http://www.rubyonrailstutor.com
 ```
-
-
-<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
-<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
-<script type="text/javascript">
-  hljs.configure({classPrefix: ''});
-  hljs.initHighlightingOnLoad();
-</script>
