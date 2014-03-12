@@ -9,6 +9,7 @@ repo: https://github.com/rubyonrailstutor/curriculum
 ---
 <iframe width="640" height="360" src="//www.youtube.com/embed/w2x0VtVlxX8?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
+<h4><a href="{{ page.repo }}" target="_blank">follow along with the source code</a></h4>
 
 ``` ruby 
   # http://ruby-doc.org/core-2.1.1/String.html

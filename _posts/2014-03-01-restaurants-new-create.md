@@ -10,6 +10,8 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/sxlV7yb6u3g?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
+<h4><a href="{{ page.repo }}" target="_blank">follow along with the source code</a></h4>
+
 ### RESTAURANTS#NEW
 
 
