@@ -63,7 +63,7 @@ describe RestaurantsController do
   end
 end
 
-~~~ 
+{% endhighlight %}
 
 #### expect red
 
