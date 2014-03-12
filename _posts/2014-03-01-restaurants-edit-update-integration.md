@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Restaurantly#edit, #update integration tests"
+title:  "Restaurantly#edit, #update  integration tests"
 date:   2014-03-01 11:26:42
 tags: free ruby coding resources capybara integration testing
 language: ruby
@@ -17,7 +17,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
 
 > modify spec/features/restaurants_spec.rb
 
-~~~ ruby
+{% highlight ruby %}
   describe "edit links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -32,11 +32,11 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
       end
     end
   end
-~~~
+{% endhighlight %}
 
 > rspec spect/features/restaurant_spec.rb
 
-~~~ ruby
+{% highlight ruby %}
   describe "destroy links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -50,6 +50,6 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
       end
     end
   end
-~~~
+{% endhighlight %}
 
 > rspec spect/features/restaurant_spec.rb

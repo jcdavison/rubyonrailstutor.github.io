@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Restaurantly #index integration"
+title:  "Restaurantly #index  integration"
 date:   2014-03-01 11:26:42
 language: ruby
 tags: free ruby coding resources integrationtesting
@@ -16,7 +16,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify spec/requests/restaurant_spec.rb
 
-~~~ ruby
+{% highlight ruby %}
   context "GET /" do
     subject { get "/" }
     it "renders index" do
@@ -27,7 +27,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify app/controllers/restaurants_controller.rb
 
-~~~ ruby
+{% highlight ruby %}
   def index
     @restaurants = Restaurant.all
   end
@@ -61,7 +61,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify spec/features/restaurants_spec.rb
 
-~~~ ruby
+{% highlight ruby %}
   describe "edit links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do
@@ -84,7 +84,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 ### expect green
 
 
-~~~ ruby
+{% highlight ruby %}
   describe "destroy links work" do
     context "displays ", :driver => :selenium do
       it "Restaurantly Spots!" do

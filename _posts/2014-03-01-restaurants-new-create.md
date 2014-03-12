@@ -22,7 +22,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 > modify spec/requests/restaurants_spec.rb
 
 
-```ruby
+{% highlight ruby %}
   context "GET /restaurants/new" do
     subject {get "/restaurants/new" }
 
@@ -41,7 +41,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 
 > modify app/controllers/restaurants_controller#new
 
-```ruby
+{% highlight ruby %}
   def new
     @restaurant = Restaurant.new
   end
@@ -70,7 +70,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 
 > modify /spec/requests/restaurants_spec.rb
 
-```ruby
+{% highlight ruby %}
   context "POST /restaurants" do
     context "complete params" do
       restaurant = {restaurant: {name: "mcrails"}}
@@ -99,7 +99,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 > modify app/controllers/restaurants_controller.rb
 
 
-```ruby
+{% highlight ruby %}
   def create
     name = params[:restaurant][:name] if params[:restaurant]
     @restaurant = Restaurant.new name: name
