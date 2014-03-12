@@ -10,8 +10,8 @@ repo: https://github.com/rubyonrailstutor/curriculum
 <iframe width="640" height="360" src="//www.youtube.com/embed/w2x0VtVlxX8?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 
 
-~~~ ruby
+{% highlight ruby %}
   def some_method
     p "someoutput"
   end
-~~~ 
+{% endhighlight %}
