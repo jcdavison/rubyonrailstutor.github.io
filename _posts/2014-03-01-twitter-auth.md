@@ -17,10 +17,10 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth
 
 #### modify Gemfile.rb
 
-~~~ ruby
+{% highlight ruby %}
   gem 'omniauth'
   gem 'omniauth-twitter'
-~~~ 
+{% endhighlight %}
 
 
 
@@ -28,20 +28,20 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth
 
 > touch app/views/layouts/_sign_in.haml
 
-~~~ haml
+{% highlight haml %}
   .row
     .large-2.columns.large-centered
       - unless current_user
         = link_to "Sign Up/In", "/users/auth/twitter", class: "button small radius"
       - else
         = link_to "logout", destroy_user_session_path, method: "DELETE"
-~~~ 
+{% endhighlight %}
 
 #### modify app/views/layouts/application.html.erb
 
-~~~ erb
+{% highlight erb %}
   <%= render "layouts/sign_in" %>
-~~~ 
+{% endhighlight %}
 
 #### create a new app on twitter
 
@@ -58,36 +58,36 @@ http://127.0.0.1/auth/twitter/callback
 
 #### set environmental variables in ~/.bash_profile
 
-~~~ sh
+{% highlight sh %}
   export RESTAURANTLY_TWITTER_KEY='yourspecialkey'
   export RESTAURANTLY_TWITTER_SECRET='yourspecialsecret'
-~~~ 
+{% endhighlight %}
 
 > source ~/.bash_profile
 
 #### modify config/initializers/devise.rb
 
-~~~ ruby
+{% highlight ruby %}
   config.omniauth :twitter, ENV['RESTAURANTLY_TWITTER_KEY'], ENV['RESTAURANTLY_TWITTER_SECRET']
-~~~ 
+{% endhighlight %}
 
 #### modify config/routes.rb
 
-~~~ ruby
+{% highlight ruby %}
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks"}
-~~~ 
+{% endhighlight %}
 
 #### modify app/models/user.rb
 
-~~~ ruby
+{% highlight ruby %}
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
-~~~ 
+{% endhighlight %}
 
 > mkdir app/controllers/users | touch app/controllers/users/omniauth_callbacks_controller.rb
 
 
-~~~ ruby
+{% highlight ruby %}
   # props to @auser
   # the below is mangled a bit from https://leanpub.com/angularjs-rails
 
@@ -129,7 +129,7 @@ http://127.0.0.1/auth/twitter/callback
     end
 
   end
-~~~ 
+{% endhighlight %}
 
 #### resources
 

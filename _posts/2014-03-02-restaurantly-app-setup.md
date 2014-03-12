@@ -40,7 +40,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
 #### update Gemfile
 
 
-~~~ ruby
+{% highlight ruby %}
   source 'https://rubygems.org'
 
   # application gems
@@ -69,7 +69,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
   group :doc do
     gem 'sdoc', require: false
   end
-~~~ 
+{% endhighlight %}
 
 > bundle install
 
@@ -80,7 +80,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
 
 #### update config/database.yml
 
-~~~ 
+{% highlight %}
   development:
     adapter: postgresql
     encoding: unicode
@@ -96,7 +96,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
     pool: 5
     host: localhost
     port: 5432
-~~~ 
+{% endhighlight %}
 
 > bundle exec rake db:create
 
