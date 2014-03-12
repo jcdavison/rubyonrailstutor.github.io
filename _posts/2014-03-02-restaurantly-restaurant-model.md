@@ -17,7 +17,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 
 #### pro tip setup 'be' in ~/.bash_profile or ~/.bashrc
 
-{% highlight %}
+{% highlight sh %}
   alias be='bundle exec'
 {% endhighlight %}
 

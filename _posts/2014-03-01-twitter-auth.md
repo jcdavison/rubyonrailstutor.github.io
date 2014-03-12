@@ -39,7 +39,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth
 
 #### modify app/views/layouts/application.html.erb
 
-{% highlight %}
+{% highlight ruby %}
   <%= render "layouts/sign_in" %>
 {% endhighlight %}
 

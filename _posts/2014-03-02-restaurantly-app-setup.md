@@ -80,7 +80,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
 
 #### update config/database.yml
 
-{% highlight %}
+{% highlight ruby %}
   development:
     adapter: postgresql
     encoding: unicode

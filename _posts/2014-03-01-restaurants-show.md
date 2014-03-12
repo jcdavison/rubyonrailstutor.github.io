@@ -93,7 +93,7 @@ end
 
 > modify app/views/restaurants/show.html.haml
 
-{% highlight %}
+{% highlight haml %}
 .row
   .large-8.columns.large-centered
     %h1
