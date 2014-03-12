@@ -30,7 +30,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
       expect(subject).to render_template(:new)
     end
   end
-```
+{% endhighlight %}
 
 
 >rspec spec/requests/restaurants_spec.rb
@@ -45,11 +45,11 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
   def new
     @restaurant = Restaurant.new
   end
-```
+{% endhighlight %}
 
 > modify app/views/restaurants/new.html.haml
 
-```haml
+{% highlight haml %}
   .row
     .large-8.columns.large-centered
       = form_for @restaurant do |restaurant|
@@ -59,7 +59,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
     .large-8.columns.large-centered
       %h3.subheader.center
         New Restaurantly Spots!
-```
+{% endhighlight %}
 
 > verify in browser, visit http://localhost:3000/restaurants/new
 
@@ -87,7 +87,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
       end
     end
   end
-```
+{% endhighlight %}
 
 
 > rspec spec/requests/restaurants_spec.rb
@@ -111,7 +111,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
       redirect_to new_restaurant_path
     end
   end
-```
+{% endhighlight %}
 
 
 > rspec spec/requests/restaurants_spec.rb

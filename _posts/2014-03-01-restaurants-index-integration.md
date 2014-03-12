@@ -23,7 +23,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       expect(subject).to render_template(:index)
     end
   end
-~~~ 
+{% endhighlight %}
 
 > modify app/controllers/restaurants_controller.rb
 
@@ -31,7 +31,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
   def index
     @restaurants = Restaurant.all
   end
-~~~ 
+{% endhighlight %}
 
 > rspec spec/requests/restaurants_spec.rb
 
@@ -40,7 +40,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 
 > modify index.html.haml
 
-~~~ haml
+{% highlight haml %}
   .row
     .large-8.columns.large-centered
       %h3.subheader.center
@@ -50,7 +50,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       - @restaurants.each do |restaurant|
         %h5.subheader
           = restaurant.name
-~~~ 
+{% endhighlight %}
 
 > verify in browser, visit http://localhost:3000/index.html.haml
 
@@ -76,7 +76,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       end
     end
   end
-~~~ 
+{% endhighlight %}
 
 > rspec spec/features/restaurants_spec.rb
 
@@ -98,7 +98,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
       end
     end
   end
-~~~ 
+{% endhighlight %}
 
 > rspec spec/features/restaurants_spec.rb
 
