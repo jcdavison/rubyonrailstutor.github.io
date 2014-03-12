@@ -6,12 +6,8 @@ tags: free ruby coding resources capybara integration testing
 language: ruby
 categories: editupdateintegration
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-integration
+screencast: "//www.youtube.com/embed/lZiI4nAWh3M?vq=hd1080"
 ---
-
-<iframe width="640" height="360" src="//www.youtube.com/embed/lZiI4nAWh3M?vq=hd1080" frameborder="0" allowfullscreen></iframe>
-
-<h4><a href="{{ page.repo }}" target="_blank">follow along with the source code</a></h4>
-
 
 ### INTEGRATION RESTAURANTS#EDIT
 
@@ -54,4 +50,4 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-inte
   end
 ```
 
-> rspec spect/features/restaurant_spec.rb
+> rspec spec/features/restaurant_spec.rb

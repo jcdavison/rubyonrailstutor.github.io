@@ -35,3 +35,13 @@ git
 psql
 xcode tools
 
+### jekyll stuff
+
+- to compile less files into css
+- -x is the minify flag 
+- the css file will get auto copied to site/assets/css 
+- important, any changes made in assets/css wil get copied to site/assets
+- so the less recomiple may or may not be necessary depending on purpose.
+
+> lessc assets/less/main.less > assets/css/main.min.css -x
+

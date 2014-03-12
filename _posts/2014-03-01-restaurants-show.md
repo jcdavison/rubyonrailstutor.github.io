@@ -6,11 +6,8 @@ tags: free ruby coding resources show
 language: ruby
 categories: show
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/show-restaurant
+screencast: "//www.youtube.com/embed/xhiqKVfpPBs?vq=hd1080"
 ---
-
-<iframe width="640" height="360" src="//www.youtube.com/embed/xhiqKVfpPBs?vq=hd1080" frameborder="0" allowfullscreen></iframe>
-
-<h4><a href="{{ page.repo }}" target="_blank">follow along with the source code</a></h4>
 
 #### CREATE RESTAURANTS#SHOW
 

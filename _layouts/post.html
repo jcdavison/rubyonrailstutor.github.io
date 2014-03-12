@@ -40,9 +40,20 @@
       </footer>
       <div class="entry-content">
         
+        {% if page.screencast %}
+        <iframe width="640" height="360" src="{{ page.screencast }}" frameborder="0" allowfullscreen></iframe>
+        {% endif %}
+
+        {% include calltoaction.html %}
+
+
+        <h4><a href="{{ page.repo }}" target="_blank">follow along with the source code</a></h4>
         <div itemscope itemtype="http://schema.org/Code">
           {{ content }}
         </div>
+
+        {% include calltoaction.html %}
+
         {% if site.disqus_shortname and page.comments %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
