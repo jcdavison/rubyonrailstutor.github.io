@@ -72,6 +72,16 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
   {% for post in site.categories.twitterauth %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
+
+  <h2>Cohorts</h2>
+  {% for post in site.categories.cohorts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+
+  <h2>Cohort Challenges</h2>
+  {% for post in site.categories.challenges %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
 </ul>
 
 <h2>About</h2>
