@@ -12,8 +12,11 @@
 to run this blog
 
 > gem install jekyll
+
 > git clone https://github.com/rubyonrailstutor/rubyonrailstutor.github.io.git
+
 > cd rubyonrailstutor.github.io
+
 > jekyll serve -w
 
 ### jekyll stuff
