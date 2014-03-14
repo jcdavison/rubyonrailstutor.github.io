@@ -1,4 +1,4 @@
-## Learn to code, for free.
+## LEARN TO CODE, FOR FREE.
 
 ### http://rubyonrailstutor.github.io
 
