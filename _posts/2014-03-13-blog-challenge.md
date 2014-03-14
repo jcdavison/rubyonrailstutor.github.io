@@ -6,7 +6,7 @@ language: ruby
 tags: captainslog
 categories: challenges
 repo: https://github.com/rubyonrailstutor/bengaltigers
-screencast: "//www.youtube.com/embed/ylc3i7XDWl8?vq=hd1080"
+screencast: "//www.youtube.com/embed/hQ8EO5xIXUg?vq=hd1080"
 ---
 
 ### Learn to fork, clone, edit, commit, push and use jekyll.
