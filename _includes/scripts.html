@@ -70,6 +70,7 @@
           crossDomain: true,
           type: "POST",
           url: "https://www.rubyonrailstutor.com/join.json",
+          <!-- url: "http://localhost:3000/join.json", -->
           data: {
             first_name: first, 
             last_name: last, 
@@ -78,20 +79,17 @@
             applied: "false"},
           dataType: "JSON",
           success: function (d) {
-            $("#subscribe").text("THANKS!")
+            $("#subscribe").removeClass("error")
+            $("#subscribe").addClass("success")
+            $("#subscribe").text("PERFECT!")
+          },
+          error: function (d) {
+            $("#subscribe").removeClass("success")
+            $("#subscribe").addClass("error")
+            $("#subscribe").text("do over!")
           }
         });
       });
-
-      <!-- var corsResponse = function () { -->
-      <!--   $(document).bind("ajaxSuccess", function(data) { -->
-      <!--     console.log("success", data); -->
-      <!--   }); -->
-      <!--   $(document).bind("ajaxError", function(data) { -->
-      <!--     console.log("error", data); -->
-      <!--   }); -->
-      <!-- } -->
-      <!-- corsResponse() -->
     }
 
     submitEmail()

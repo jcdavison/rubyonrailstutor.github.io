@@ -3927,6 +3927,26 @@ span + .entry-title {
 .callout {
   color: #268bd2;
 }
+.success {
+  background-color: #229013 !important;
+  border: 2px solid #229013 !important;
+}
+.success:visited {
+  color: #ffffff;
+}
+.success:hover {
+  color: #ffffff;
+}
+.error {
+  background-color: #c64027 !important;
+  border: 2px solid #c64027 !important;
+}
+.error:visited {
+  color: #ffffff;
+}
+.error:hover {
+  color: #ffffff;
+}
 .personal {
   width: 30%;
   display: inline-block;
