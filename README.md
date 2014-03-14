@@ -1,15 +1,20 @@
-### REPO FOR TUTORIAL CONTENT 
+## Learn to code, for free.
 
-### https://github.com/rubyonrailstutor/restaurantly
+### http://rubyonrailstutor.github.io
 
-
-### JOIN A SOCIAL PAIR PROGRAMMING CLASS
+## JOIN A SOCIAL PAIR PROGRAMMING CLASS
 
 ### http://www.rubyonrailstutor.com
 
-### dev assumptions
+
+# john@rubyonrailstutor.com
+
+to run this blog
 
 > gem install jekyll
+> git clone https://github.com/rubyonrailstutor/rubyonrailstutor.github.io.git
+> cd rubyonrailstutor.github.io
+> jekyll serve -w
 
 ### jekyll stuff
 
@@ -34,3 +39,7 @@
 - improve scripts on links that need it
 - ajaxify a review object, with tests, and screencast
 - ajaxify a tags has and belongs to many object, use angular, and screencast
+
+### REPO FOR TUTORIAL CONTENT 
+
+### https://github.com/rubyonrailstutor/restaurantly
