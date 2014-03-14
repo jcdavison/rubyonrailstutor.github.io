@@ -2,38 +2,14 @@
 
 ### https://github.com/rubyonrailstutor/restaurantly
 
-### TODO
-
-- improve scripts on links that need it
-- screencast the dev setup env for mac and koding.com
-- deploy to heroku and screen cast
-- comments and analytics, coversion CTA's
-- create a script that will publish issues to repo's that i'm a contributor on
-- ajaxify a review object, with tests, and screencast
-- ajaxify a tags has and belongs to many object, use angular, and screencast
-- get the repo reviewed by a more senior coder, make sure i'm not crazy
 
 ### JOIN A SOCIAL PAIR PROGRAMMING CLASS
 
 ### http://www.rubyonrailstutor.com
 
-
-### Scripts to improve
-
-- Restaurantly App Setup
-- Restaurantly Model
-- Restaurantly Connecting Data to Client
-- Test configuration
-
-
 ### dev assumptions
 
-ruby 2
-rails 4
-sublime accesible at command line via sublime or alias subl
-git 
-psql
-xcode tools
+> gem install jekyll
 
 ### jekyll stuff
 
@@ -45,3 +21,16 @@ xcode tools
 
 > lessc assets/less/main.less > assets/css/main.min.css -x
 
+##### TODO SITE FEATURES
+
+- comments?
+- create a script that will publish issues to repo's that i'm a contributor on
+- get the repo reviewed by a more senior coder, make sure i'm not crazy
+- tdd the ajaxy cors stuff ? 
+- create something to disable the buttons while 'in transit', this is such an interesting one, does it really matter, ie, will it really impact conversions ? 
+
+##### TODO SITE CONTENT
+
+- improve scripts on links that need it
+- ajaxify a review object, with tests, and screencast
+- ajaxify a tags has and belongs to many object, use angular, and screencast
