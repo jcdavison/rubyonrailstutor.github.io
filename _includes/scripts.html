@@ -60,17 +60,19 @@
 <script>
   (function(){
     var submitEmail = function () {
-      $("#subscribe").click(function(e){
-        var first = $("#first").val()
-        var last = $("#last").val()
-        var twitter = $("#twitter").val()
-        var email = $("#email").val()
+      $(".subscribe").click(function(e){
+        console.log(this)
+        var context = $(this).closest(".calltoaction")
+        var first = context.children().find(".firstName").val()
+        var last = context.children().find(".lastName").val()
+        var email = context.children().find(".studentEmail").val()
+        var twitter = context.children().find(".twitterHandle").val()
         if ( email.length === 0) {return false;}
         $.ajax({
           crossDomain: true,
           type: "POST",
-          url: "https://www.rubyonrailstutor.com/join.json",
-          <!-- url: "http://localhost:3000/join.json", -->
+          <!-- url: "https://www.rubyonrailstutor.com/join.json", -->
+          url: "http://localhost:3000/join.json",
           data: {
             first_name: first, 
             last_name: last, 
@@ -79,14 +81,16 @@
             applied: "false"},
           dataType: "JSON",
           success: function (d) {
-            $("#subscribe").removeClass("error")
-            $("#subscribe").addClass("success")
-            $("#subscribe").text("PERFECT!")
+            context.find(".subscribe")
+              .removeClass("error")
+              .addClass("success")
+              .text("PERFECT!")
           },
           error: function (d) {
-            $("#subscribe").removeClass("success")
-            $("#subscribe").addClass("error")
-            $("#subscribe").text("do over!")
+            context.find(".subscribe")
+              .removeClass("success")
+              .addClass("error")
+              .text("try again!")
           }
         });
       });
