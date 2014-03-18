@@ -7,6 +7,7 @@ language: ruby
 categories: show
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/show-restaurant
 screencast: "//www.youtube.com/embed/xhiqKVfpPBs?vq=hd1080"
+comments: true
 ---
 
 #### CREATE RESTAURANTS#SHOW

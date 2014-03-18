@@ -7,6 +7,7 @@ tags: free ruby coding resources new create
 categories: new
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-new
 screencast: "//www.youtube.com/embed/sxlV7yb6u3g?vq=hd1080"
+comments: true
 ---
 
 ### RESTAURANTS#NEW

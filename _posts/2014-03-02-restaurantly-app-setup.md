@@ -7,6 +7,7 @@ tags: free ruby coding resources railssetup
 categories: setup
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
 screencast: "//www.youtube.com/embed/haeJMoZFVrc?vq=hd1080"
+comments: true
 ---
 
 # HOW TO SETUP RESTAURANTLY

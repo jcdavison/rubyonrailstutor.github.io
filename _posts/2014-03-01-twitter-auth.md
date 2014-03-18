@@ -7,6 +7,7 @@ tags: free ruby coding resources omniauth twitter login
 categories: twitterauth
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth
 screencast: "//www.youtube.com/embed/qv41Bl4RhRI?vq=hd1080"
+comments: true
 ---
 
 #### SESSION & TWITTER AUTH

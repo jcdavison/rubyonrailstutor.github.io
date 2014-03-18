@@ -7,6 +7,7 @@ tags: free ruby coding resources kodingsetup
 categories: setup
 repo: https://github.com/rubyonrailstutor/restaurantly/
 screencast: "//www.youtube.com/embed/iOLQkdok5tg?vq=hd1080"
+comments: true
 ---
 
 ### TODO

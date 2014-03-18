@@ -7,6 +7,7 @@ tags: free ruby coding resources integrationtesting
 categories: integration
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-index
 screencast: "//www.youtube.com/embed/Mo5j8eEbwbo?vq=hd1080"
+comments: true
 ---
 
 ### RESTAURANTS INDEX

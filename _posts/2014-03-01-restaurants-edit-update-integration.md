@@ -7,6 +7,7 @@ language: ruby
 categories: editupdateintegration
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant-edit-integration
 screencast: "//www.youtube.com/embed/lZiI4nAWh3M?vq=hd1080"
+comments: true
 ---
 
 ### INTEGRATION RESTAURANTS#EDIT

@@ -7,6 +7,7 @@ tags: free ruby coding resources string
 categories: basics
 repo: https://github.com/rubyonrailstutor/curriculum
 screencast: "//www.youtube.com/embed/w2x0VtVlxX8?vq=hd1080"
+comments: true
 ---
 
 ```ruby 

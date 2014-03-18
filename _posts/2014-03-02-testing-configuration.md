@@ -7,6 +7,7 @@ tags: free ruby coding resources testingconfiguration
 categories: testingconfig
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/test-setup
 screencast: "//www.youtube.com/embed/JNEMXq3srzM?vq=hd1080"
+comments: true
 ---
 
 #### modify Gemfile

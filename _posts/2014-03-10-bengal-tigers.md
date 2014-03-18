@@ -6,6 +6,7 @@ language: ruby
 tags: captainslog
 categories: cohorts
 repo: https://github.com/rubyonrailstutor/bengaltigers
+comments: true
 ---
 
 ### RORCOHORT003 BENGAL TIGERS

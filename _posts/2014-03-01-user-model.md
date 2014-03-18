@@ -7,6 +7,7 @@ tags: free ruby coding resources userauth
 categories: userauth
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/user-auth-models
 screencast: "//www.youtube.com/embed/YYRyg3aZWDQ?vq=hd1080"
+comments: true
 ---
 
 # purpose  - setup up user and authorization models to build prepare for twitter based login and session management.

@@ -7,6 +7,7 @@ tags: free ruby coding resources MVC
 categories: mvc
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_ui
 screencast: "//www.youtube.com/embed/1dvkowXmiio?vq=hd1080"
+comments: true
 ---
 
 #### modify config/application.rb

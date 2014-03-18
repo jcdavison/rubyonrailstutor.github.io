@@ -7,6 +7,7 @@ tags: captainslog
 categories: challenges
 repo: https://github.com/rubyonrailstutor/bengaltigers
 screencast: "//www.youtube.com/embed/hQ8EO5xIXUg?vq=hd1080"
+comments: true
 ---
 
 ### Learn to fork, clone, edit, commit, push and use jekyll.

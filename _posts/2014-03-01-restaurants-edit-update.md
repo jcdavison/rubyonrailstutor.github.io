@@ -7,6 +7,7 @@ tags: free ruby coding resources edit update destroy
 categories: edit
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurants-edit
 screencast: "//www.youtube.com/embed/juedMSbXdEc?vq=hd1080"
+comments: true
 ---
 
 ### RESTAURANTS#EDIT

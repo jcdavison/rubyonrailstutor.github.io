@@ -1,7 +1,7 @@
 title:            RubyonRailsTutor, free coding resources.
 description:      High Quality free screencasts and code to learn ruby on rails
 logo:             
-disqus_shortname: 
+disqus_shortname: rubyonrailstutor
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
 url:              http://rubyonrailstutor.github.io
@@ -17,10 +17,10 @@ owner:
   conversion:     http://www.rubyonrailstutor.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        railstutor
-  facebook:       
+  facebook:      jcdavison 
   github:        rubyonrailstutor
   stackexchange:  
-  linkedin:       
+  linkedin:      jcdavison 
   instagram:      
   flickr:         
   tumblr:         

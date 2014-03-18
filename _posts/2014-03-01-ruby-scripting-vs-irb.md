@@ -7,6 +7,7 @@ language: ruby
 categories: articles
 repo: https://github.com/rubyonrailstutor/curriculum
 screencast: "//www.youtube.com/embed/xAMhGpiYeEw?vq=hd1080"
+comments: true
 ---
 
 ```

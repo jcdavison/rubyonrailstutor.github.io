@@ -7,6 +7,7 @@ tags: free ruby coding resources rails data models
 categories: datamodels
 repo: https://github.com/rubyonrailstutor/restaurantly/tree/restaurant_model
 screencast: "//www.youtube.com/embed/9yxyw0SMMCs?vq=hd1080"
+comments: true
 ---
 
 > git checkout -b restaurant_model
