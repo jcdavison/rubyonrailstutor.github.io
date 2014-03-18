@@ -8,51 +8,53 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 <iframe width="640" height="360" src="//www.youtube.com/embed/o-z_KPQnQc0?vq=hd1080" frameborder="0" allowfullscreen></iframe>
 {% include calltoaction.html %}
 
-<h2> Restaurantly a step by step rails application. </h2>
+<p> The below modules reflect a step by step build up of <a href="https://github.com/rubyonrailstutor/restaurantly"i>Restaurantly</a>, a simple restaurant review app that is test driven including capybara integration tests, uses haml, git branching, rails 4, ruby 2, rspec, devise, omniauth, twitter login, zurb-foundation and thoughtbot's factory-girl.  The idea is that you watch the videos and then build your own clone of the app, learning as you go.  The source code is cloneable at <a href="https://github.com/rubyonrailstutor/restaurantly">github</a>.</p>
+
+<p>If you are super new to coding and really want to learn how all this works, find me on <a href="http://www.koding.com/jcdavison" target="new">koding.com/jcdavison</a> and we can remote pair program a little to get you off and running.</p>
 
 <ul class="post-list">
 
-  <h2>Ruby Basics</h2>
+  <h3>Ruby Basics</h3>
   {% for post in site.categories.basics %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h2>Rails & Development Environment Setup</h2>
+  <h3>Rails & Development Environment Setup</h3>
   {% for post in site.categories.setup %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h2>Rails Data Models</h2>
+  <h3>Rails Data Models</h3>
   {% for post in site.categories.datamodels %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h2>From the Data Model to the Web Browser</h2>
+  <h3>From the Data Model to the Web Browser</h3>
   {% for post in site.categories.mvc %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h2>Testing Configuration</h2>
+  <h3>Testing Configuration</h3>
   {% for post in site.categories.testingconfig %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h2>#Show</h2>
+  <h3>#Show</h3>
   {% for post in site.categories.show %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h2>#New & #Create</h2>
+  <h3>#New & #Create</h3>
   {% for post in site.categories.new %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h2>#Index & Integration Tests</h2>
+  <h3>#Index & Integration Tests</h3>
   {% for post in site.categories.integration %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h2>#Edit & #Update</h2>
+  <h3>#Edit & #Update</h3>
   {% for post in site.categories.edit %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
