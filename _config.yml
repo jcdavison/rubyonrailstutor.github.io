@@ -32,6 +32,7 @@ google_analytics:  UA-48724207-1
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
+mixpanel:  82be3801efa1b89b19f6688ca4ec39e7
 
 # Links to include in top navigation
 # For external links add external: true
