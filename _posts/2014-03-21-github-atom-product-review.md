@@ -1,6 +1,6 @@
 ---
 layout: review
-title:  "Github Atom Coding Editor Review"
+title:  "Review of Github's Atom.io Coding Editor"
 date:   2014-03-21 11:26:42
 language: english
 tags: productreview pairprogramming github atom
