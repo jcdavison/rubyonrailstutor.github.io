@@ -5,6 +5,7 @@ date:   2014-03-21 11:26:42
 language: english
 tags: productreview pairprogramming github atom
 categories: product
+comments: true
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/XHwicuL4K68?vq=hd1080" frameborder="0" allowfullscreen></iframe>

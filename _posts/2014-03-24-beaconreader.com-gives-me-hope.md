@@ -5,7 +5,6 @@ date:   2014-03-24 11:26:42
 language: english
 tags: productreview literature myths storytelling heroes democratize information 
 categories: product
-review: true
 comments: true
 ---
 
