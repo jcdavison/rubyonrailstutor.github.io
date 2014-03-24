@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: review
 title:  "Github Atom Coding Editor Review"
 date:   2014-03-21 11:26:42
 language: english
