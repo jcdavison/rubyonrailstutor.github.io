@@ -4,8 +4,8 @@ logo:
 disqus_shortname: rubyonrailstutor
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://rubyonrailstutor.github.io
-# url:              http://localhost:4000
+# url:              http://rubyonrailstutor.github.io
+url:              http://localhost:4000
 name:             Free Ruby on Rails Coding Resources
 
 
