@@ -6,6 +6,7 @@ language: english
 tags: productreview literature myths storytelling heroes democratize information 
 categories: product
 review: true
+comments: true
 ---
 
 <a href="http://www.beaconreader.com" target="new">Beaconreader.com</a> aims to allow independent journalists, makers, writers and content producers, the ability to crowd-source their funding needs in an attempt to give them a window of creative and journalistic independence.  
