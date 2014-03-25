@@ -33,11 +33,17 @@ comments: true
 
 ### navigate to http://localhost:4000/
 
-> open 2014-03-05-cohort-session-log.md and add your feedback to my questions under your name
+> sublime .
+
+will open the entire application in sublime
+
+### modify posts/2014-03-05-cohort-session-log.md 
+
+1. Add your feedback to my questions under your name
 
 since we are using .md, that means "markdown" and you can use github flavored markdown syntax
 
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 > save, git add . -A, git commit -m "your commit message"
 
@@ -46,7 +52,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 at this point, you will have pushed the branch to your own fork of the bengaltigers repository, which lives on the rubyonrailstutor github user account, we now want to issue a pull request.
 
-https://help.github.com/articles/using-pull-requests
+[https://help.github.com/articles/using-pull-requests](https://help.github.com/articles/using-pull-requests)
 
 # IMPORTANT NOTE 
 

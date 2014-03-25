@@ -47,7 +47,9 @@
         {% include calltoaction.html %}
 
 
-        <h4><a href="{{ page.repo }}" target="_blank">follow along with the source code</a></h4>
+        {% if page.repo %}
+          <h4><a href="{{ page.repo }}" target="_blank">follow along with the source code</a></h4>
+        {% endif %}
         <div itemscope itemtype="http://schema.org/Code">
           {{ content }}
         </div>
