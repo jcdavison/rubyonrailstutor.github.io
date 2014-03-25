@@ -11,7 +11,7 @@ Setting up and configuring your development environment at first hurts, causes p
 
 ### I've felt the same pain, I will help minimize it for you.  
 
-I can guarantee there will be hassles and I can guarantee that I won't know everything, but this is where pro-coding starts and backyard coding stops. 
+I can guarantee there will be hassles, I can guarantee that I won't know everything, I can guarantee that I will become part of the solution, not the problem.
 
 ### TAKE MAXIMUM OWNERSHIP OF YOUR MACHINE
 
