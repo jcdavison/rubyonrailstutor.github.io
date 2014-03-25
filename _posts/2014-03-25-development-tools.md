@@ -4,7 +4,7 @@ title:  "Development Tools"
 date:   2014-03-25 11:26:42
 language: english
 tags: development tools
-categories: cohorts
+categories: rubyonrailstutor
 comments: true
 ---
 Setting up and configuring your development environment at first hurts, causes problems and stress.  I won't say there isn't some significant pain involved in installing and getting everything dialed in.  
