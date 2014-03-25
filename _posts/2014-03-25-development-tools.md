@@ -106,7 +106,7 @@ Capability: To be able to open and edit files/applications from the command line
 
 Install sublime, or textmate, or anything that makes sense, as long as you can code quickly, set tabs, search for files and have nested panes of code.
 
-I use VIM when I code and sublime mostly to teach.  The one detail that is very important is to ensure you configure sublime to be accessible from the command line.  Sublime is great software, if you use it please pay for it.  Having constants popups while you code interrupts your flow.
+I use VIM when I code and sublime mostly to teach.  The one detail that is very important is to ensure you configure sublime to be accessible from the command line.  Sublime is great software, if you use it please pay for it.  Having constant popups while you code interrupts your flow.
 
 > sublime .
 
