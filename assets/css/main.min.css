@@ -747,6 +747,7 @@ span+.entry-title{margin-top:0;}
 .centered{text-align:center;}
 .callout{color:#268bd2 !important;}
 .inline{display:inline !important;}
+.padded{padding:10px;}
 .green{color:#8bc12c !important;}
 .success{background-color:#229013 !important;border:2px solid #229013 !important;}.success:visited{color:#ffffff;}
 .success:hover{color:#ffffff;}

@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Learn Ruby on Rails
-description: "A simple and clean responsive Jekyll theme for words and photos."
-tags: [Jekyll, theme, themes, responsive, blog, minimalism]
+description: "Become a maker"
+tags: [coding, resources, ruby, ruby on rails]
 ---
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/o-z_KPQnQc0?vq=hd1080" frameborder="0" allowfullscreen></iframe>
@@ -61,15 +61,17 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 
 </ol>
 
-<ul class="post-list no-list">
+
 
 {% include tweetforhelp.html %}
 
 
 {% include calltoaction.html %}
 
+<div class="margined">
   <h2 class="centered callout margined">Supplemental Resources</h2>
 
+  <ul class="post-list no-list">
   <h3>Ruby on Rails Tutor Ethos, Background and Useful to Know</h3>
   {% for post in site.categories.rubyonrailstutor %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -92,7 +94,8 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
   {% for post in site.categories.product %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
-</ul>
+  </ul>
+</div>
 
 
 {% include tweetforhelp.html %}
