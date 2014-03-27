@@ -4,7 +4,7 @@ title:  "koding.com ruby on rails setup"
 date:   2014-03-01 11:26:42
 language: ruby
 tags: free ruby coding resources kodingsetup
-categories: setup
+categories: rubyonrailstutor
 repo: https://github.com/rubyonrailstutor/restaurantly/
 screencast: "//www.youtube.com/embed/iOLQkdok5tg?vq=hd1080"
 comments: true

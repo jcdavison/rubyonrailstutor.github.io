@@ -10,74 +10,67 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 
 <strong>Join a social pair programming boot-camp at <a href="http://rubyonrailstutor.com" class="callout">rubyonrailstutor.com</a></strong>
 
-<p> Follow the below free Ruby on Rails screencasts to learn how to build a functioning application from the ground up using tdd, git and all the standards in rails development (tdd, rspec, capybara, haml, foundation, factorygirl, oauth, devise).</p>
+<p>Follow the below free Ruby on Rails screencasts to learn how to build a functioning application from the ground up using tdd, git and all the standards in rails development (tdd, rspec, capybara, haml, foundation, factorygirl, oauth, devise).</p>
 
 <p>Ping me at <a href="http://twitter.com/railstutor" target="new">twiter.com/railstutor</a> and we can remote pair program a little to get you off and running.</p>
 
-<ul class="post-list">
+<h2 class="centered callout margined">Learn by following the below modules.</h2>
 
-  <h3>Ruby Basics</h3>
-  {% for post in site.categories.basics %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+<ol class="post-list">
 
-  <h3>Rails & Development Environment Setup</h3>
+
   {% for post in site.categories.setup %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>Rails Data Models</h3>
   {% for post in site.categories.datamodels %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>From the Data Model to the Web Browser</h3>
   {% for post in site.categories.mvc %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>Testing Configuration</h3>
   {% for post in site.categories.testingconfig %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>#Show</h3>
   {% for post in site.categories.show %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>#New & #Create</h3>
   {% for post in site.categories.new %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>#Index & Integration Tests</h3>
   {% for post in site.categories.integration %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>#Edit & #Update</h3>
   {% for post in site.categories.edit %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>#Edit #Update Integration Tests</h3>
   {% for post in site.categories.editupdateintegration %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>User & Authorization</h3>
   {% for post in site.categories.userauth %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
 
-  <h3>Twitter Auth</h3>
   {% for post in site.categories.twitterauth %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>RubyonrailsTutor Ethos and Background</h3>
+</ol>
+
+<ul class="post-list no-list">
+
+  <h2 class="centered callout margined">Supplemental Resources</h2>
+
+  <h3>Ruby on Rails Tutor Ethos, Background and Useful to Know</h3>
   {% for post in site.categories.rubyonrailstutor %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
@@ -87,17 +80,20 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
-  <h3>Challenge Tutorials</h3>
+  <h3>Challenges & Ruby Basics</h3>
   {% for post in site.categories.challenges %}
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  {% for post in site.categories.basics %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 
   <h3>Product & Tech Reviews</h3>
   {% for post in site.categories.product %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
-
 </ul>
+
 
 <h2>About</h2>
 

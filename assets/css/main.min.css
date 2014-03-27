@@ -3767,10 +3767,11 @@ span + .entry-title {
 .post-list {
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 .post-list li {
-  padding: 8px 0;
+  padding: 8px 0 15px 0;
+  margin-bottom: 20px;
+  line-height: 0px;
   border-bottom: 1px solid #cccccc;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   *zoom: 1;
@@ -3961,4 +3962,10 @@ span + .entry-title {
 }
 .pointer {
   cursor: pointer;
+}
+.no-list {
+  list-style-type: none;
+}
+.margined {
+  margin: 10px 0 10px 0;
 }

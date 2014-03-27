@@ -7,6 +7,7 @@ gem 'kramdown', '1.3.1'
 gem 'coderay'
 gem 'activesupport'
 gem 'stringex'
+gem 'rake'
 
 # used to mirror github dev env
 gem 'maruku', '0.7.0'

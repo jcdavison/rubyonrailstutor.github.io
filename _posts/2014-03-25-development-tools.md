@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Development Tools"
+title:  "MAC OSX Ruby on Rails Development Setup"
 date:   2014-03-25 11:26:42
 language: english
 tags: development tools
