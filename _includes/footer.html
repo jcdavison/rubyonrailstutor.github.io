@@ -1,6 +1,7 @@
-<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>. <a href="{{site.url}}/blogroll/blog-roll/">Blog Roll</a></span>
+<div class="centered">
+  <a href="https://twitter.com/railstutor" class="padded twitter-follow-button" data-show-count="false" data-size="large">Follow @railstutor</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
 <div class="social-icons">
-  {% if site.owner.conversion %}<a href="{{ site.owner.conversion }}" title="{{ site.owner.name}}""  target="_blank"><img src="{{site.url}}/images/pairwithme.png"></a>{% endif %}
 	{% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="icon-twitter icon-2x"></i></a>{% endif %}
 	{% if site.owner.facebook %}<a href="http://facebook.com/{{ site.owner.facebook }}" title="{{ site.owner.name}} on Facebook" target="_blank"><i class="icon-facebook icon-2x"></i></a>{% endif %}
 	{% if site.owner.google_plus %}<a href="{{ site.owner.google_plus }}" title="{{ site.owner.name}} on Google+" target="_blank"><i class="icon-google-plus icon-2x"></i></a>{% endif %}
@@ -11,3 +12,8 @@
 	{% if site.owner.github %}<a href="http://github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="icon-github icon-2x"></i></a>{% endif %}
 	{% if site.owner.tumblr %}<a href="http://{{ site.owner.tumblr }}.tumblr.com" title="{{ site.owner.name}} on Tumblr" target="_blank"><i class="icon-tumblr icon-2x"></i></a>{% endif %}
 </div><!-- /.social-icons -->
+
+
+<div class="centered"> tags => {% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</div>
+
+<div class="centered">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>. <a href="{{site.url}}/blogroll/blog-roll/">Blog Roll</a></div>

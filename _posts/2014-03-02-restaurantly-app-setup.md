@@ -10,13 +10,7 @@ screencast: "//www.youtube.com/embed/haeJMoZFVrc?vq=hd1080"
 comments: true
 ---
 
-# HOW TO SETUP RESTAURANTLY
-
-#### view the code
-
-
-#### https://github.com/rubyonrailstutor/restaurantly/tree/setup
-
+## HOW TO SETUP RESTAURANTLY
 
 > ruby -v
 
