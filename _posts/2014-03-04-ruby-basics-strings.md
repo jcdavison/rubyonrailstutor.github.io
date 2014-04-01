@@ -22,8 +22,8 @@ comments: true
   # String Concatenation
   first_name = "john"
   last_name = "davison"
-  first + last
-  first
+  first_name + last_name
+  first_name
 
   # String Interpolation
   first = "john"
