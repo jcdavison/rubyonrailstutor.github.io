@@ -9,6 +9,7 @@ repo: https://github.com/rubyonrailstutor/restaurantly/tree/setup
 screencast: "//www.youtube.com/embed/haeJMoZFVrc?vq=hd1080"
 comments: true
 ---
+<h1 class="callout"> THIS IS AN EXAMPLE </H1>
 
 ## HOW TO SETUP RESTAURANTLY
 
